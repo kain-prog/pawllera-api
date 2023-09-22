@@ -1,5 +1,5 @@
 buildCommand: |
   npm install
   npm install -g n
-  n 14.17.6
+  n 20.5.0
   npm run build
