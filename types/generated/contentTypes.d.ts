@@ -766,13 +766,14 @@ export interface ApiPubPub extends Schema.CollectionType {
     singularName: 'pub';
     pluralName: 'pubs';
     displayName: 'Pub';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Nome: Attribute.String & Attribute.Required;
-    Imagem: Attribute.Media & Attribute.Required;
+    titulo: Attribute.String & Attribute.Required;
+    imagem: Attribute.Media & Attribute.Required;
     autor: Attribute.Relation<
       'api::pub.pub',
       'manyToOne',
